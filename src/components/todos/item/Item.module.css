@@ -1,0 +1,99 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 670px) {
+    padding: 5px 15px;
+  }
+
+  &:hover {
+    .controls {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .form {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .field {
+    border-color: var(--grey-light-color);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .close {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .button {
+    background-color: var(--white-color);
+    width: 100%;
+    min-height: 50px;
+    font-size: 21px;
+    color: var(--main-color);
+    border-bottom-color: var(--grey-color);
+
+    @media screen and (max-width: 670px) {
+      min-height: 35px;
+    }
+  }
+
+  .controls {
+    transform: translateX(20px);
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    transition: transform .4s ease, opacity .4s ease;
+
+    @media screen and (max-width: 490px) {
+      bottom: -5px;
+    }
+
+
+    .control {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+  }
+
+  &.check {
+    color: var(--grey-light-color);
+  }
+}
+
+&:first-child {
+  .button {
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+&:last-child {
+  .button {
+    border-radius: 0 0 4px 4px;
+    border-bottom-color: transparent;
+  }
+
+}

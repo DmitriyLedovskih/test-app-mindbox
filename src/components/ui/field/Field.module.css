@@ -1,0 +1,40 @@
+.field {
+  width: 100%;
+  font-size: 18px;
+  height: 100%;
+  color: var(--main-color);
+
+  @media screen and (max-width: 670px) {
+    font-size: 16px;
+  }
+
+  &::placeholder {
+    color: var(--grey-light-color);
+  }
+
+  &.error {
+    border-color: var(--error-color);
+  }
+}
+
+.hint {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 12px;
+  padding: 5px 7px;
+  background-color: var(--grey-color);
+  color: var(--grey-second-color);
+  border-radius: 3px;
+  pointer-events: none;
+
+  @media screen and (max-width: 670px) {
+    right: 10px;
+    padding: 4px;
+  }
+
+  @media screen and (max-width: 490px) {
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+.block {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: var(--grey-light-color);
+}
