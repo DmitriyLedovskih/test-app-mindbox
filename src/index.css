@@ -2,6 +2,7 @@
 
 :root {
   --font-main: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --main-color: #fff;
   --white-color: #fff;
   --main-color: #575757;
   --turquoise-color: #7ac1b1;
@@ -24,6 +25,7 @@ body {
   font-size: 16px;
   line-height: 1;
   font-family: var(--font-main);
+  background-color: var(--main-color);
 }
 
 button {
